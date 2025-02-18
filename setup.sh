@@ -5,7 +5,7 @@ SKIP_IMAGES=false
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-        --skip-download) SKIP_IMAGES=true ;;
+        --skip-images) SKIP_IMAGES=true ;;
         *) echo "Unknown parameter: $1"; exit 1 ;;
     esac
     shift
