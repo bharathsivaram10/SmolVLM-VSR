@@ -41,7 +41,7 @@ python app.py
 
 Here's a comparison of outputs form base and fine-tuned model. Although it was trained on True/False queries, the fine-tuned model allows for more descriptive spatial relations:
 
-![Base Model output](assets/images/base_output.png "Base Model output")
+![Base Model output](assets/images/base_output.PNG "Base Model output")
 
-![Fine-tuned Model output](assets/images/fine-tuned_output.png "Fine-tuned Model output")
+![Fine-tuned Model output](assets/images/finetuned_output.PNG "Fine-tuned Model output")
 
