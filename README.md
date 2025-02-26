@@ -13,7 +13,7 @@ Run the bash file to update some packages and also download the dataset repo + i
 
 ```bash
 cd SmolVLM-VSR
-bash setup.sh
+bash setup_training.sh
 ```
 
 Sometimes, the Dropbox link used in the setup.sh file can fail due to too many downloads in that day. In that case go into the visual-spatial-reasoning/data directory
@@ -22,9 +22,26 @@ and follow the instructions to download COCO data and run the select_only_revlev
 If you have already downloaded the images and just want to get dependencies, run with the skip images option:
 
 ```bash
-bash setup.sh --skip-images
+bash setup_training.sh --skip-images
 ```
 
-
-
 You can now follow the along in the notebook!
+
+If you don't want to train and just want to try out the fine-tuned model locally, you can used the following bash and app commands. Note that you do need a GPU to run locally, but most consumer GPUs should work:
+
+```bash
+bash setup_app.sh
+```
+
+```bash
+python app.py
+```
+
+# Results
+
+Here's a comparison of outputs form base and fine-tuned model. Although it was trained on True/False queries, the fine-tuned model allows for more descriptive spatial relations:
+
+![Base Model output](assets/images/base_output.png "Base Model output")
+
+![Fine-tuned Model output](assets/images/fine-tuned_output.png "Fine-tuned Model output")
+

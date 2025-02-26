@@ -1,0 +1,6 @@
+gradio
+torch
+PIL
+transformers
+peft
+gdown
