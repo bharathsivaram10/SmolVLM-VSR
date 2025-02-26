@@ -1,6 +1,9 @@
 # SmolVLM-VSR
 Finetuning SmolVLM for visual reasoning tasks
 
+https://github.com/user-attachments/assets/67ddb3ea-f235-4859-b375-91c671853621
+
+
 ## Setup
 ```bash 
 git clone https://github.com/bharathsivaram10/SmolVLM-VSR.git
